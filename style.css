@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background: rgb(23, 141, 221);
+}
+
+.container {
+    min-width: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+#newtask {
+    margin: 15px 0px;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+#input-text {
+    width: 280px;
+    outline: none;
+    border-radius: 3px;
+    padding: 7px;
+    border: 2px solid rgb(101, 98, 98);
+    margin-right: 25px;
+    font-size: 1rem;
+}
+
+#input-text:focus {
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#push {
+    font-size: 15px;
+    font-family: Arial;
+    width: 80px;
+    height: 40px;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: #337fed;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    text-shadow: inset 0px 1px 0px #1570cd;
+    background: linear-gradient(#3d94f6, #1e62d0);
+}
+
+#push:hover {
+    background: linear-gradient(#1e62d0, #3d94f6);
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.task {
+    background-color: #c5e1e6;
+    height: 35px;
+    margin-bottom: 6px;
+    display: flex;
+    padding: 3px 7px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+
+.task>div>span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* width: 500px; */
+}
+
+.task>div>button {
+    background-color: #0a2ea4;
+    color: #ffffff;
+    height: 100%;
+    /*width: 40px;*/
+    padding :10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type="checkbox"]:checked+span {
+    text-decoration: line-through;
+}
